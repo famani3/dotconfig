@@ -150,6 +150,8 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'mxw/vim-jsx'
 Plugin 'isRuslan/vim-es6'
 Plugin 'ap/vim-css-color'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/vim-js-pretty-template'
 
 "
 " Development Tool Integration
@@ -162,6 +164,7 @@ Plugin 'carlobaldassi/ConqueTerm'
 Plugin 'sjl/vitality.vim'
 Plugin 'brysgo/test_server'
 Plugin 'klen/python-mode'
+Plugin 'junegunn/vim-emoji'
 
 call vundle#end()
 filetype plugin indent on
@@ -188,6 +191,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:gitgutter_sign_added = emoji#for('small_blue_diamond')
+let g:gitgutter_sign_modified = emoji#for('small_orange_diamond')
+let g:gitgutter_sign_removed = emoji#for('small_red_triangle')
+let g:gitgutter_sign_modified_removed = emoji#for('collision')
+
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = '/workspace/NFL/WebClient/node_modules/.bin/eslint'
 let g:syntastic_python_checkers = ['pyflakes']
@@ -198,7 +206,6 @@ let g:syntastic_error_symbol = '❌'
 let g:syntastic_style_error_symbol = '⁉️'
 let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
-
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
