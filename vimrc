@@ -58,17 +58,6 @@ Plugin 'Color-Sampler-Pack'
 Plugin 'flazz/vim-colorschemes'
 
 "
-" Ruby / Rails
-"
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-endwise'
-Plugin 'ecomba/vim-ruby-refactoring'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'jgdavey/vim-blockle'
-Plugin 'tpope/vim-rbenv'
-Plugin 'tpope/vim-rake'
-
-"
 " General Editing
 "
 Plugin 'tpope/vim-repeat'
@@ -191,12 +180,6 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = '/workspace/NFL/WebClient/node_modules/.bin/eslint'
-let g:syntastic_python_checkers = ['pyflakes']
-
-let g:pymode_lint_checkers = ['pyflakes']
-
 let g:syntastic_error_symbol = '✗✗'
 let g:syntastic_style_error_symbol = '✠✠'
 let g:syntastic_warning_symbol = '∆∆'
@@ -215,7 +198,3 @@ let g:syntastic_check_on_wq = 0
 
 let g:ctrlp_custom_ignore = '\v[\/](JavaProjects|3rdParty|ScalaProjects|docs|node_modules|venv|json_config)'
 let g:jsx_ext_required = 0
-
-let g:pymode_rope_goto_definition_bind = '<C-c>g'
-let g:pymode_rope_goto_definition_cmd = 'new'
-let g:pymode_rope_complete_on_dot = 0
